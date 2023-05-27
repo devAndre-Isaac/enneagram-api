@@ -9,9 +9,9 @@ import express, {
 import 'express-async-errors';
 
 import dotenv from 'dotenv';
-import routes from '@shared/routes/index.routes';
-import { dataSource } from '@shared/typeorm';
-import AppError from '@shared/errors/AppError';
+import { dataSource } from './shared/typeorm';
+import routes from './shared/routes/index.routes';
+import AppError from './shared/errors/AppError';
 
 dotenv.config();
 

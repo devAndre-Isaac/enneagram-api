@@ -11,11 +11,6 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "paths": {
-      "@config/*": ["src/config/*"],
-      "@modules/*": ["src/modules/*"],
-      "@shared/*": ["src/shared/*"]
-    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,

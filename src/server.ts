@@ -1,6 +1,6 @@
 import 'reflect-metadata';
 import app from './app';
-import '@shared/container/';
+import '../src/shared/container';
 
 const start = async () => app.start();
 start();

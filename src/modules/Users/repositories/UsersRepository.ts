@@ -1,4 +1,4 @@
-import { dataSource } from '@shared/typeorm';
+import { dataSource } from '../../../shared/typeorm';
 import { Repository } from 'typeorm';
 import { IUserAuth } from '../dtos/users.dto';
 import { User } from '../entities/User';

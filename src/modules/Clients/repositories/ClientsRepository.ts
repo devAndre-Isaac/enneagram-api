@@ -1,4 +1,4 @@
-import { dataSource } from '@shared/typeorm';
+import { dataSource } from '../../../shared/typeorm';
 import { Repository } from 'typeorm';
 import { Client } from '../entities/Client';
 import { IClientsRepository } from './IClientsRepository';

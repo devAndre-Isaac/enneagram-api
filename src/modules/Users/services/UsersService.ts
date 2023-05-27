@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import { IUsersRepository } from '../repositories/IUsersRepository';
 import { IUserAuth } from '../dtos/users.dto';
-import AppError from '@shared/errors/AppError';
+import AppError from '../../../shared/errors/AppError';
 
 dotenv.config();
 
