@@ -1,0 +1,11 @@
+POST /clients/create/ HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+Content-Length: 2488
+
+{
+  "name": "Andre",
+  "function": "Desenvolvedor",
+  "date": "2023-05-26 00:00:01",
+  "email": "andreisaac344@gmail.com"
+  }
