@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "API for conexao RH - Eneagram",
   "main": "index.js",
+  "engines": {
+    "node": "14.21.3"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
