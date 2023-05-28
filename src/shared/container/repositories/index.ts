@@ -4,8 +4,8 @@ import { ClientsRepository } from '../../../modules/Clients/repositories/Clients
 import { IUsersRepository } from '../../../modules/Users/repositories/IUsersRepository';
 import { UsersRepository } from '../../../modules/Users/repositories/UsersRepository';
 import { container } from 'tsyringe';
-import { IQuestionsRepository } from 'src/modules/Questions/repositories/IQuestionsRepository';
-import { QuestionsRepository } from 'src/modules/Questions/repositories/QuestionsRepository';
+import { IQuestionsRepository } from '../../../modules/Questions/repositories/IQuestionsRepository';
+import { QuestionsRepository } from '../../../modules/Questions/repositories/QuestionsRepository';
 
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
