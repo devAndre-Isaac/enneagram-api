@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class EnneagramDB1685148101209 implements MigrationInterface {
-  name = 'EnneagramDB1685148101209';
+export class AddAnswerToClient1685292662466 implements MigrationInterface {
+  name = 'AddAnswerToClient1685292662466';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
