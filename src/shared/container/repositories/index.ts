@@ -6,6 +6,8 @@ import { UsersRepository } from '../../../modules/Users/repositories/UsersReposi
 import { container } from 'tsyringe';
 import { IQuestionsRepository } from '../../../modules/Questions/repositories/IQuestionsRepository';
 import { QuestionsRepository } from '../../../modules/Questions/repositories/QuestionsRepository';
+import { IAnswersRepository } from '../../../modules/Answers/repositories/IAnswersRepository';
+import { AnswersRepository } from '../../../modules/Answers/repositories/AnswersRepository';
 
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
@@ -19,4 +21,9 @@ container.registerSingleton<IClientsRepository>(
 container.registerSingleton<IQuestionsRepository>(
   'QuestionsRepository',
   QuestionsRepository,
+);
+
+container.registerSingleton<IAnswersRepository>(
+  'AnswersRepository',
+  AnswersRepository,
 );

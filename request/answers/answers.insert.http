@@ -1,0 +1,19 @@
+POST /answers/insert/ HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+Content-Length: 2488
+
+[
+  {
+    "question": "6cd986f6-2560-494a-b080-d03ed523ac85",
+    "mostSuitableOption": "eccdfb0b-c2ea-4ccd-bcff-9cadd9c9aacc",
+    "leastSuitableOption": "e0517e0e-99dd-4306-9356-9d6159426374",
+    "client": "dc076ec6-0945-4c0e-a215-8b21a51a8089"
+  },
+    {
+    "question": "c6d66699-56ce-42c3-b295-1440c06a1912",
+    "mostSuitableOption": "1ec052cc-50e2-4ee1-8f6b-1b7da9c106d2",
+    "leastSuitableOption": "b3aa91ac-0973-4f61-a178-7b72d5657923",
+    "client": "dc076ec6-0945-4c0e-a215-8b21a51a8089"
+  }
+]

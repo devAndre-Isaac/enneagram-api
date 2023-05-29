@@ -2,6 +2,7 @@ import { dataSource } from '../../../shared/typeorm';
 import { Repository } from 'typeorm';
 import { Client } from '../entities/Client';
 import { IClientsRepository } from './IClientsRepository';
+import { ICreateClient } from '../dto/client.dto';
 
 export class ClientsRepository implements IClientsRepository {
   private repository: Repository<Client>;
@@ -10,12 +11,7 @@ export class ClientsRepository implements IClientsRepository {
     this.repository = dataSource.getRepository(Client);
   }
 
-  async create(client: {
-    name: string;
-    function: string;
-    date: Date;
-    email: string;
-  }): Promise<Client> {
+  async create(client: ICreateClient): Promise<Client> {
     const newClient = this.repository.create(client);
 
     return this.repository.save(newClient);
