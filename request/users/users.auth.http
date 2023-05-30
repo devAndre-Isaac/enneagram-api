@@ -4,6 +4,7 @@ Host: localhost:3000
 Content-Length: 2488
 
 {
-  "email":"andrea@andre",
+  "email":"ethelrossi@conexaorh.com",
   "password": "123"
 }
+
