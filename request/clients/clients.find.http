@@ -1,0 +1,7 @@
+GET /clients/find/344122cb-23cf-481c-9927-3b55213d06e7 HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+Content-Length: 2488
+
+
+

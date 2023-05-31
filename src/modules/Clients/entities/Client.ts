@@ -18,6 +18,9 @@ export class Client {
   @Column()
   email: string;
 
+  @Column({ nullable: true })
+  ennegramGraph: string;
+
   @OneToMany(() => Answers, (answers) => answers.client)
   answers: Answers[];
 }

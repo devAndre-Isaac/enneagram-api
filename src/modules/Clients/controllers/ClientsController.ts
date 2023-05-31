@@ -15,5 +15,19 @@ class ClientsController {
 
     return res.json(client);
   }
+
+  public async show(req: Request, res: Response): Promise<Response> {
+    const clients = await this.clientsService.list();
+
+    return res.json(clients);
+  }
+
+  public async find(req: Request, res: Response): Promise<Response> {
+    const { id } = req.params;
+
+    const client = await this.clientsService.find(id);
+
+    return res.json(client);
+  }
 }
 export default container.resolve(ClientsController);

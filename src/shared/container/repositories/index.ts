@@ -8,6 +8,8 @@ import { IQuestionsRepository } from '../../../modules/Questions/repositories/IQ
 import { QuestionsRepository } from '../../../modules/Questions/repositories/QuestionsRepository';
 import { IAnswersRepository } from '../../../modules/Answers/repositories/IAnswersRepository';
 import { AnswersRepository } from '../../../modules/Answers/repositories/AnswersRepository';
+import { OptionsRepository } from '../../../modules/Options/repositories/OptionsRepository';
+import { IOptionsRepository } from '../../../modules/Options/repositories/IOptionsRepository';
 
 container.registerSingleton<IUsersRepository>(
   'UsersRepository',
@@ -26,4 +28,8 @@ container.registerSingleton<IQuestionsRepository>(
 container.registerSingleton<IAnswersRepository>(
   'AnswersRepository',
   AnswersRepository,
+);
+container.registerSingleton<IOptionsRepository>(
+  'OptionsRepository',
+  OptionsRepository,
 );

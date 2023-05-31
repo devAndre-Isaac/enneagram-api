@@ -20,4 +20,16 @@ export class ClientsService {
 
     return client;
   }
+
+  public async list() {
+    const clients = await this.clientsRepository.find();
+
+    return clients;
+  }
+
+  public async find(id: string) {
+    const client = await this.clientsRepository.findById(id);
+    if (!client) throw new AppError('Client not exists');
+    return client;
+  }
 }

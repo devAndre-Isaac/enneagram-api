@@ -17,6 +17,26 @@ export class ClientsRepository implements IClientsRepository {
     return this.repository.save(newClient);
   }
 
+  async find(): Promise<Client[]> {
+    const clients = await this.repository.find();
+
+    return clients;
+  }
+
+  async findById(id: string): Promise<Client | undefined> {
+    const client = await this.repository.findOne({
+      where: { id },
+      relations: [
+        'answers',
+        'answers.question',
+        'answers.mostSuitableOption',
+        'answers.leastSuitableOption',
+      ],
+    });
+
+    return client;
+  }
+
   async findOne(email: string): Promise<Client | undefined> {
     const client = await this.repository.findOne({ where: { email } });
 

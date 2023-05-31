@@ -14,4 +14,9 @@ export class QuestionsRepository implements IQuestionsRepository {
     const questions = await this.repository.find({ relations: ['options'] });
     return questions;
   }
+  async insert(questions: { texto: string }): Promise<Question> {
+    const question = await this.repository.create(questions);
+
+    return this.repository.save(question);
+  }
 }

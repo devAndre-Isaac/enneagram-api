@@ -14,5 +14,11 @@ class QuestionsController {
 
     return res.json(user);
   }
+
+  public async insert(req: Request, res: Response): Promise<Response> {
+    const questions = await this.questionsService.insert();
+
+    return res.json(questions);
+  }
 }
 export default container.resolve(QuestionsController);
